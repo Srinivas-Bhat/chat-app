@@ -65,22 +65,46 @@ const Contact = ({ contacts, currentUser, changeChat }) => {
   );
 };
 
+// border: 1px solid orange;
+
 const Container = styled.div`
   display: grid;
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
+  // border: 1px solid orange;
   background-color: #080420;
+  @media screen and (min-width: 320px) and (max-width: 375px) {
+    display: grid;
+    width: 70px;
+    grid-template-rows: 10% 77% 13%;
+  }
   .brand {
     display: flex;
     align-items: center;
     gap: 1rem;
     justify-content: center;
+    @media screen and (min-width: 320px) and (max-width: 375px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 10px;
+      gap: 5px;
+    }
     img {
       height: 2rem;
+      @media screen and (min-width: 320px) and (max-width: 375px) {
+        height: 1.4rem;
+      }
     }
     h3 {
       color: white;
       text-transform: uppercase;
+      @media screen and (min-width: 320px) and (max-width: 375px) {
+        font-size: 12px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
   .contacts {
@@ -108,14 +132,29 @@ const Container = styled.div`
       gap: 1rem;
       align-items: center;
       transition: 0.5s ease-in-out;
+      @media screen and (min-width: 320px) and (max-width: 375px) {
+        flex-direction: column;
+        gap: 0.7rem;
+        width: 100%;
+        border: 1px solid orange;
+      }
       .avatar {
         img {
           height: 3rem;
+          @media screen and (min-width: 320px) and (max-width: 375px) {
+            height: 2.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
         }
       }
       .username {
         h3 {
           color: white;
+          @media screen and (min-width: 320px) and (max-width: 375px) {
+            font-size: 14px;
+          }
         }
       }
     }

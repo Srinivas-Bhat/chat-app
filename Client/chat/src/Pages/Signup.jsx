@@ -33,7 +33,7 @@ const Signup = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    // console.log(text);
+    console.log(text);
     if(handleValidation()){
       console.log("in validation", signupRoute)
       const {username, password, email} = text;
