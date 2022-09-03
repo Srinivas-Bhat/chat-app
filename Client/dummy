@@ -1,0 +1,46 @@
+<!-- <Stack spacing={4}>
+            <InputGroup>
+              <Input
+                type="text"
+                placeholder="Enter UserName"
+                width="350px"
+                name="username"
+                onChange={handleChange}
+              />
+            </InputGroup>
+
+            <InputGroup>
+              <Input
+                placeholder="Enter Email"
+                type="email"
+                width="350px"
+                name="email"
+                onChange={handleChange}
+              />
+            </InputGroup>
+            <InputGroup size="md" width="350px">
+              <Input
+                pr="4.5rem"
+                type={show ? "text" : "password"}
+                placeholder="Enter password"
+                name="password"
+                onChange={handleChange}
+              />
+              <InputRightElement width="4.5rem">
+                <Button h="1.75rem" size="sm" onClick={handleClick}>
+                  {show ? "Hide" : "Show"}
+                </Button>
+              </InputRightElement>
+            </InputGroup>
+            <InputGroup width="350px">
+              <Input
+                placeholder="Confirm password"
+                type="password"
+                name="confirm password"
+                onChange={handleChange}
+              />
+            </InputGroup>
+            <Button colorScheme="teal" variant="outline" type="submit" width="200px">
+              Create User
+            </Button>
+          </Stack> -->
