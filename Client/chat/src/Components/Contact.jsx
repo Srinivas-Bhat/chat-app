@@ -82,7 +82,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-    justify-content: center;
+    justify-content: center; 
     @media screen and (min-width: 320px) and (max-width: 375px) {
       flex-direction: column;
       align-items: flex-start;
